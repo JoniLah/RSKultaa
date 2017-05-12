@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fi">
+<meta charset=utf-8>
+
+	<head>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<title>RSKultaa</title>
+		
+		<script type="text/javascript" src="scripts/price.js"></script>
+		<script type="text/javascript" src="scripts/jquery-3.2.0.min.js"></script>
+		
+		<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!--If JavaScript is not allowed-->
+		<noscript>
+			<style>
+				body *{
+					display: none;
+				}
+				h1 {
+					display: block;
+					text-align: center;
+				}
+			</style>
+			<h1>
+				JavaScript is not enabled, please check your browser settings.
+			</h1>
+		</noscript>
+	
+	</head>
+	
+	
+	
+	
+	<body>
+		<div id="wholePage">
+			<div id="pagediv" style="width:1000px; margin: 0 auto;">
+			
+			<!--BANNERI-->
+			<center><img src="img/banner.png"></center>
+			<hr class="custom">
+			
+			<!--Return-->
+			<a href="index.html">
+				<img src="img/palaanappi.png" width="15%" height="15%" onmouseover="this.src='img/palaanappihover.png'" onmouseout="this.src='img/palaanappi.png'" alt="Etusivunappi" style="padding-left: 28px;"/>
+			</a>
+			
+			<!--Kehykset-->
+			<div id="tiedot" class="nappiPaneeli" style="height: 100%;">
+				<div class="header">TIEDOT</div>
+				<div class="body">
+				<strong><font color="white">Täytä tietosi tähän ennen maksutapahtumaa.</font></strong>
+				<br style="line-height:22px; display: block; margin: 10px 0; content: ' ';">
+				<form>
+  					<label>
+						Sähköpostisi:
+						<font color="black">
+							<input id="email" class="fillForm" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" type="text" name="email" required>
+						</font>
+					</label>
+					<label>
+						Nimesi RuneScapessa:
+						<font color="black">
+							<input id="ign" class="fillForm" maxlength="12" type="text" name="ign" required><br>
+						</font>
+					</label>
+					OSRS - 
+					<script type="text/javascript">
+						var varRequest = getUrlVar()["totalprice"];
+						document.write(varRequest);
+					</script>
+					MIL hintaan 
+					<script type="text/javascript">
+						var finalPrice = getUrlVar()["totalprice"] * baseMilPrice;
+						document.write('<FONT COLOR="white">');
+						document.write('<strong>');
+						document.write(finalPrice.toFixed(2));
+						document.write('</strong>');
+						document.write('</FONT>');
+					</script> €.
+					<br><br>
+					
+					<!-- Tallenna -button-->
+					<input id="submitBtn" type="submit" value="Tallenna" onclick="tallennaTiedot()" style="color: black">
+				</form>
+				</div>
+			</div>
+			
+			<div id="maksuvahvistus" class="nappiPaneeli" style="height: 100%;">
+				<div class="header">MAKSUVAHVISTUS</div>
+				<div class="body">
+					<p>
+					<div id="emailDiv">
+						<p id="pemail">
+						Sähköposti:
+						<script>
+							$("#submitBtn").click(function () {
+								var pEmail = tallennaTiedot().palautaEmail();
+								document.getElementById('pemail').innerHTML = "Sähköposti: " + pEmail.fontcolor("white");
+							});
+						</script>
+						</p>
+					</div>
+					
+					<div id="ignDiv">
+						<p id="prsn">RSN:
+						<script>
+							$("#submitBtn").click(function () {
+								var pIgn = tallennaTiedot().palautaIgn();
+								document.getElementById('prsn').innerHTML = "RSN: " + pIgn.fontcolor("white");
+							});
+						</script>
+						</p>
+						<input type="button" value="Muokkaa" onclick="muokkaaTietoja()" style="color: black;">
+					</div>
+					<br><br><br>
+					Olet ostamassa meiltä OSRS - 
+					<strong>
+					<script type="text/javascript">
+						var varRequest = getUrlVar()["totalprice"];
+						document.write(varRequest);
+					</script>
+					MIL 
+					</strong>
+					-kultaa hintaan
+					<script type="text/javascript">
+						var finalPrice = getUrlVar()["totalprice"] * baseMilPrice;
+						document.write('<FONT COLOR="white">');
+						document.write('<strong>');
+						document.write(finalPrice.toFixed(2));
+						document.write('</strong>');
+						document.write('</FONT>');
+					</script>
+					 €.
+					
+					<br>
+					Vahvistaaksesi maksun PayPalin kautta, hyväksy käyttöehdot ja paina ruutuun ilmestyvää 'PayPal' -painiketta.<br>
+					<br>
+					Varmistathan, että Live Chat on Online tilassa ennekuin tilaat. Muussa tapauksessa joudut odottamaan rahojasi, kunnes asiakaspalvelu aukeaa.<br>
+					Jos maksat kyseisen summan Live Chatin ollessaan offlinessa, rahojen palautukset ovat kiellettyä, mikäli tilauksestasi on alle 48h. <br>
+					Mikäli tilauksestasi on kulunut yli 48 tuntia ja rahoja ei ole saapunut, olet oikeutettu rahojen palauttamiseen.<br>
+					Virtuaalirahan ostaminen oikealla rahalla rikkoo pelin sääntöjä, joten emme ole vastuussa mahdollisista pelinsisäisistä porttikielloista.<br>
+					<strong>Maksamalla summan hyväksyt nämä käyttöehdot.</strong>
+					<br>
+					<br>
+					<strong>HUOM! Otamme jokaisesta maksutapahtumasta kuva-/videomateriaalia.</strong>
+					</p>
+					
+					<br>
+					<center><input id="checkboxID" type="checkbox" name="kayttoehdot"> Ymmärrän ja hyväksyn yllä olevat käyttöehdot</center>
+					<br><br><br>
+					
+					<center>
+						<div id="buttonid">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_xclick"> <!--ÄLÄ MUUTA!-->
+							<input type="hidden" name="business" value="runescapekultaa@gmail.com"> <!--Osoite, johon rahat tulevat-->
+							<input type="hidden" name="lc" value="US"> <!--PayPal sivun kieli uudelleenohjauksen yhteydessä-->
+							<input type="hidden" name="amount" id="paypalPrice" value="0"> <!--Tuotteen hinta-->
+							<input type="hidden" name="item_name" id="paypalDescription" value="0">  <!--Tuotteen nimi -->
+							<input type="hidden" name="currency_code" value="EUR" /> <!--Valuutta-->
+							<input type="hidden" name="no_note" value="1" /> <!--Lisätiedot: 1 = ei, 0 = kyllä-->
+							<input type="hidden" name="return" value="order_success.html">  <!--Sivu, johon asiakas ohjataan onnistuneen ostotapahtuman jälkeen-->
+							<input type="hidden" name="cancel_return" value="order_fail.html">  <!--Sivu, johon asiakas ohjataan hylätyn ostotapahtuman jälkeen-->
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</div>
+					</center>
+				</div>
+			
+			</div>
+			<hr class="custom">
+			<!-- Tiedot -->
+			<h3>Tietoa meistä</h3>
+			<p class="tietoa">
+				Olemme avoinna <time>10:00 - 18:00</time> joka arkipäivä.<br>
+				Mikäli tarvitset apua, voit ottaa yhteyttä kyseiseen sähköpostiin:<br>
+				<font size="6" color="orange">runescapekultaa@gmail.com</font>
+				
+				<br><center>Registered Names and Trademarks are the copyright and property of their respective owners.<br>RuneScape is a trademark of Jagex Software 1999 - 2017 Jagex, Ltd.</center>
+			</p>
+			</div>
+		</div>
+
+		<script>
+		
+			// Hides the 'Maksuvahvistus' -div
+			$(document).ready(function() {
+				$('#maksuvahvistus').hide();
+				$('html').removeClass('no-js');
+				$('#checkboxID').change(function(){
+				  if($(this).prop("checked")) {
+					$('#buttonid').fadeIn();
+					let prevent_touch = true;
+					document.documentElement.addEventListener('touchmove', touchMove, false);
+					function touchMove(event) { 
+						if (prevent_touch) event.preventDefault();
+					}
+				  } else {
+					$('#buttonid').hide();
+				  }
+				});
+			});
+			
+			function getPaypalPrice() {
+				return finalPrice = getUrlVar().totalprice * baseMilPrice;
+			}
+			
+			var paypalPriceElement = document.getElementById('paypalPrice');
+			paypalPriceElement.value = getPaypalPrice();
+		
+			function getPaypalDescription() {
+				return "OSRS Kultaa - " + getUrlVar().totalprice + " MIL";
+			}
+			
+			var paypalDescriptionElement = document.getElementById('paypalDescription');
+			paypalDescriptionElement.value = getPaypalDescription();
+			
+			// 'Tallenna' -buttons functions
+			$('form').submit(function(e){
+				$('#tiedot').fadeOut();
+				$('#maksuvahvistus').fadeIn();
+				e.preventDefault();
+				$('form').unbind('submit').click();
+			});
+			
+			function tallennaTiedot() {
+				var palautaEmail = function () {
+					var _e = document.getElementById("email").value;
+					return _e;
+				}
+
+				var palautaIgn = function () {
+					var _i = document.getElementById("ign").value;
+					return _i;
+				}
+
+				return {
+				   palautaEmail :palautaEmail,
+				   palautaIgn :palautaIgn
+				}
+			}
+			
+			function muokkaaTietoja() {
+				$('#maksuvahvistus').fadeOut();
+				$('#tiedot').fadeIn();
+				$('form').submit(function(e){
+					$('#tiedot').fadeOut();
+					$('#maksuvahvistus').fadeIn();
+					e.preventDefault();
+					$('form').unbind('submit').click();
+				});
+			}
+		</script>
+		
+		<style>
+			label, .fillForm {
+				display: block;
+			}
+
+			label {
+				margin-bottom: 20px;
+			}
+		</style>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fi">
+<meta charset=utf-8>
+
+	<head>
+		<link href="rsicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<title>RSKultaa</title>
+		
+		<script type="text/javascript" src="scripts/price.js"></script>
+		<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!--If JavaScript is not allowed-->
+		<noscript>
+			<style>
+				body *{
+					display: none;
+				}
+				h1 {
+					display: block;
+					text-align: center;
+				}
+			</style>
+			<h1>
+				JavaScript is not enabled, please check your browser settings.
+			</h1>
+		</noscript>
+		
+	</head>
+	
+	
+	
+	
+	<body>
+	<div id="wholePage">
+		<div id="pagediv" style="width:1000px; margin: 0 auto;">
+		
+		<!--BANNERI-->
+		<center><img src="img/banner.png" style="pointer-events: none;"></center>
+		<hr class="custom">
+		<p id="special"><center><font size="5" color = "orange">RSKultaa on suomalainen OldSchool RuneScape -kultakauppa</font><br>
+			<font color = "white">
+				<br>
+				Nopeat ja turvalliset vaihdot.<br>
+				Ei rekisteröintiä.<br>
+				Suomalainen asiakaspalvelu.<br>
+				Helppokäyttöinen.<br>
+			</font>
+			<br><br>
+			<font size="4" color = "orange">Tilausohjeet:</font><br><br><br>
+				<font color = "white">
+					<div style="text-align: center;">
+						<div style="display: inline-block; text-align: left">
+							<ul style="list-style-type:none">
+								<li>1. Varmista, että Live Chat on Online-tilassa ennen tilaustasi.</li><br>
+								<li>2. Valitse haluamasi kultamäärä.</li><br>
+								<li>3. Suorita maksu PayPalin kautta.</li><br>
+								<li>4. Avaa Live Chat, jonka jälkeen saat meiltä ohjeet kultasi lunastamiseen.</li><br>
+								<li>5. Nauti rikkauksista.</li><br>
+							</ul>
+						</div>
+					</div>
+				</font>
+			</center>
+			<hr class="custom">
+		</p>
+		
+		<!--Kehykset-->
+		<div id="group">
+			<div id="groupLeft">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 3 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>3 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice1">
+							<script>
+								getPrice(3,"totalPrice1")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=3">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">3000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupMiddle">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 4 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>4 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice2">
+							<script>
+								getPrice(4,"totalPrice2")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=4">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">4000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupRight">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 5 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>5 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice3">
+							<script>
+								getPrice(5,"totalPrice3")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=5">
+								<img id="imgNapit" src="img/tilausnappi.png" unselectable="on" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">5000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="group">
+			<div id="groupLeft">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 6 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>6 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice4">
+							<script>
+								getPrice(6,"totalPrice4")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=6">
+								<img src="img/tilausnappi.png" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi" style="width: 15%; height 15%;"/>
+							</a>
+							<label class="cashstack"l>6000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupMiddle">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 7 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>7 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice5">
+							<script>
+								getPrice(7,"totalPrice5")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=7">
+								<img src="img/tilausnappi.png" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi" style="width: 15%; height 15%;"/>
+							</a>
+							<label class="cashstack">7000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupRight">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 8 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>8 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice6">
+							<script>
+								getPrice(8,"totalPrice6")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=8">
+								<img src="img/tilausnappi.png" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi" style="width: 15%; height 15%;"/>
+							</a>
+							<label class="cashstack">8000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="group">
+			<div id="groupLeft">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 9 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>9 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice7">
+							<script>
+								getPrice(9,"totalPrice7")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: white; font-size: 2;">
+							<a href="transaction.html?totalprice=9">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">9000K</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupMiddle">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 10 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>10 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice8">
+							<script>
+								getPrice(10,"totalPrice8")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: green; font-size: 2;">
+							<a href="transaction.html?totalprice=10">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">10M</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupRight">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 20 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>20 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice9">
+							<script>
+								getPrice(20,"totalPrice9")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: green; font-size: 2;">
+							<a href="transaction.html?totalprice=20">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">20M</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="group" style="margin-bottom: 20px;">
+			<div id="groupLeft">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 30 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>30 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice10">
+							<script>
+								getPrice(30,"totalPrice10")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: green; font-size: 2;">
+							<a href="transaction.html?totalprice=30">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">30M</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupMiddle">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 40 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>40 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice11">
+							<script>
+								getPrice(40,"totalPrice11")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: green; font-size: 2;">
+							<a href="transaction.html?totalprice=40">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">40M</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="groupRight">
+				<div class="nappiPaneeli" style="width: 300px;">
+					<div class="header"><strong>OSRS - 50 MIL</strong></div>
+					<div class="body">
+						<p align="center">Osta <strong>50 MIL</strong> OSRS kultaa - 
+						<span id="totalPrice12">
+							<script>
+								getPrice(50,"totalPrice12")
+							</script>
+						</span>
+						€
+						</p>
+						
+						<div class="buttonImage" style="color: green" style="font-size: 2">
+							<a id="50m" href="transaction.html?totalprice">
+								<img src="img/tilausnappi.png" width="15%" height="15%" onmouseover="this.src='img/tilausnappihover.png'" onmouseout="this.src='img/tilausnappi.png'" alt="Tilausnappi"/>
+							</a>
+							<label class="cashstack">50M</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="custom">
+
+		<!-- Tiedot -->
+		<h3>Tietoa meistä</h3>
+		<p class="tietoa">
+			Olemme avoinna <time>10:00 - 18:00</time> joka arkipäivä.<br>
+			Mikäli tarvitset apua, voit ottaa yhteyttä kyseiseen sähköpostiin:<br>
+			<font size="6" color="orange">runescapekultaa@gmail.com</font>
+			
+			<br><center>Registered Names and Trademarks are the copyright and property of their respective owners.<br>RuneScape is a trademark of Jagex Software 1999 - 2017 Jagex, Ltd.</center>
+		</p>
+		</div>
+	</div>
+	
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		
+		<!-- Unselectable text -->
+        <script>
+            $.fn.extend({ 
+                disableSelection: function() { 
+                    this.each(function() { 
+                        if (typeof this.onselectstart != 'undefined') {
+                            this.onselectstart = function() { return false; };
+                        } else if (typeof this.style.MozUserSelect != 'undefined') {
+                            this.style.MozUserSelect = 'none';
+                        } else {
+                            this.onmousedown = function() { return false; };
+                        }
+                    }); 
+                } 
+            });
+
+            $(document).ready(function() {
+                $('label').disableSelection();            
+            });
+        </script>
+		
+		<!-- Base64 encode-->
+		<script>
+			var a = document.getElementById('50m');
+			a.href = "transaction.html?" + btoa("totalprice=50");
+		</script>
+
+	</body>
+	
+</html>

@@ -1,0 +1,177 @@
+/* ELEMENTS */
+
+body {
+	background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h3 {
+	color: orange;
+	padding: 20px;
+}
+
+h2 { 
+	position: absolute;
+	top: -30px;
+	left: 0;
+	width: 20%;
+	height: 20%;
+}
+
+hr.custom { 
+	width: 96%;
+	height: 30px; 
+	border-style: solid; 
+	border-color: #8c8b8b; 
+	border-width: 1px 0 0 0; 
+	border-radius: 20px; 
+} 
+
+hr.custom:before { 
+	display: block; 
+	content: "";
+	height: 30px; 
+	margin-top: -31px;
+	border-style: solid; 
+	border-color: #8c8b8b; 
+	border-width: 0 0 1px 0; 
+	border-radius: 20px; 
+}
+
+/* ID */
+
+#special {
+	background: none;
+}
+
+#pagediv {
+	background: black;
+	background-image: url("../img/bodybg.jpg");
+}
+
+#imageText {
+	position: relative;
+	width: 100%;
+}
+
+#vcontainer {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#group {
+	width: 1000px;
+    margin: 0;
+    padding: 0 20px;
+    border: 0;
+}
+
+#groupLeft, #groupRight {
+	width: 285px;
+	float: left;
+	margin-left: 20px
+}
+
+#groupMiddle {
+	width: 285px;
+	float: left;
+	margin-left: 20px
+}
+
+#wholePage {
+	/*overflow: scroll;*/
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+#buttonid {
+	display: none;
+}
+
+html.no-js #buttonid {
+	display: block;
+}
+
+/* CLASS */
+
+.tietoa {
+	background: none;
+	color: white;
+	padding: 20px;
+	text-align: left;
+}
+
+.list-group-item[aria-expanded="true"]{
+    background-color: black !important;
+	border-color: orange;
+}
+
+.nappiPaneeli {
+	border: 1px solid orange;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px orange;
+	margin: 3%;
+}
+
+.nappiPaneeli .header {
+	background: orange;
+	font-family: Comic Sans MS;
+	color: white;
+	border: 1px solid orange;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px; /* For older browsers (Safari 3-4, iOS 1-3.2, Android 1.6-) */
+	-moz-border-radius: 5px; /* Old Mozilla (Firefor 1-3.6)*/
+	padding: 10px 20px; /* Headerin paksuus | Tekstin align */
+	/* Outline */
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000;
+}
+
+.nappiPaneeli .body {
+	background: black;
+	background-image: url("../img/Darkcave.jpg");
+	padding: 40px 20px;
+	color: orange;
+}
+
+.buttonImage { 
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 90px;
+}
+
+.cashstack {
+	position: absolute;
+	padding: 5px 95px;
+	text-align: middle;
+	top: -5px; 
+	left: 0px; 
+	width: 40%;
+	height: 40%;
+	font-family: RSFont;
+	font-size: 70%;
+	text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,  
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000;
+}

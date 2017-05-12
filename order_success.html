@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+<meta charset=utf-8>
+
+	<head>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<title>RSKultaa</title>
+		
+		<script type="text/javascript" src="scripts/price.js"></script>
+		<script type="text/javascript" src="scripts/jquery-3.2.0.min.js"></script>
+		
+		<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+		<noscript>
+			<style>
+				body *{
+					display: none;
+				}
+				h1 {
+					display: block;
+					text-align: center;
+				}
+			</style>
+			<h1>
+				JavaScript is not enabled, please check your browser settings.
+			</h1>
+		</noscript>
+	
+	</head>
+	
+	
+	
+	
+	<body>
+		<div id="wholePage">
+			<div id="pagediv" style="width:1000px; margin: 0 auto;">
+			
+			<!--BANNERI-->
+			<center><img src="img/banner.png"></center>
+			<hr class="custom">
+			<!-- Napit -->
+			<a href="index.html">
+				<img src="img/palaanappi.png" width="15%" height="15%" onmouseover="this.src='img/palaanappihover.png'" onmouseout="this.src='img/palaanappi.png'" alt="Etusivunappi" style="padding-left: 28px;"/>
+			</a>
+			
+			<div class="nappiPaneeli" style="height: 100%;">
+				<div class="header">Kuitti</div>
+				<div class="body">
+					<br>
+					<center><strong>Kiitos tilauksestasi! Käsittelemme tilaustasi mahdollisimman pian.</strong></center>
+					<br>
+					Tilasit meiltä 
+					<br>
+					Muista ottaa yhteyttä Live Chat -palveluun. Tämän tehtyäsi sinun tulee kertoa meille tilauskoodisi, jonka näet PayPal -maksut sivulta.<br><br>
+				<br>
+				</div>
+			
+			</div>
+			<hr class="custom">
+			<!-- Tiedot -->
+			<h3>Tietoa meistä</h3>
+			<p class="tietoa">
+				Olemme avoinna <time>10:00 - 18:00</time> joka arkipäivä.<br>
+				Mikäli tarvitset apua, voit ottaa yhteyttä kyseiseen sähköpostiin:<br><
+				font size="6" color="orange">runescapekultaa@gmail.com</font>
+				
+				<br><center>Registered Names and Trademarks are the copyright and property of their respective owners.<br>RuneScape is a trademark of Jagex Software 1999 - 2017 Jagex, Ltd.</center>
+			</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var varRequest = getUrlVar()["totalprice"];
+			document.write(varRequest);
+		</script>
+		
+		<script type="text/javascript">
+			var finalPrice = getUrlVar()["totalprice"] * baseMilPrice;
+			document.write('<FONT COLOR="white">');
+			document.write('<strong>');
+			document.write(finalPrice.toFixed(2));
+			document.write('</strong>');
+			document.write('</FONT>');
+		</script>
+
+	</body>
+	
+</html>
