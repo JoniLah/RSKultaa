@@ -7,3 +7,5 @@ However, seems like he is not interested in this project anymore, so I decided t
 Also, some of the supposed functions/methods that should've been added to site, are not ready yet (eg. receipt from the purchase emailed to your email).
 
 This project uses mostly Finnish language, so for those who do not understand Finnish, might find it hard to understand this website.
+
+I have created those "Palaa" and "Tilaa" -buttons with InkScape, other images are downloaded from the internet.
