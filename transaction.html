@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fi">
-<meta charset=utf-8>
 
 	<head>
+		<meta charset=utf-8>
+		
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 		<title>RSKultaa</title>
 		
@@ -18,22 +19,6 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		
-		<!--If JavaScript is not allowed-->
-		<noscript>
-			<style>
-				body *{
-					display: none;
-				}
-				h1 {
-					display: block;
-					text-align: center;
-				}
-			</style>
-			<h1>
-				JavaScript is not enabled, please check your browser settings.
-			</h1>
-		</noscript>
-	
 	</head>
 	
 	
@@ -44,12 +29,12 @@
 			<div id="pagediv" style="width:1000px; margin: 0 auto;">
 			
 			<!--BANNERI-->
-			<center><img src="img/banner.png"></center>
+			<center><img src="img/banner.png" alt=""></center>
 			<hr class="custom">
 			
 			<!--Return-->
 			<a href="index.html">
-				<img src="img/palaanappi.png" width="15%" height="15%" onmouseover="this.src='img/palaanappihover.png'" onmouseout="this.src='img/palaanappi.png'" alt="Etusivunappi" style="padding-left: 28px;"/>
+				<img src="img/palaanappi.png" onmouseover="this.src='img/palaanappihover.png'" onmouseout="this.src='img/palaanappi.png'" alt="Etusivunappi" style="padding-left: 28px; width: 15%; height: 15%;"/>
 			</a>
 			
 			<!--Kehykset-->
@@ -154,7 +139,9 @@
 					</p>
 					
 					<br>
-					<center><input id="checkboxID" type="checkbox" name="kayttoehdot"> Ymmärrän ja hyväksyn yllä olevat käyttöehdot</center>
+					<center>
+						<input id="checkboxID" type="checkbox" name="kayttoehdot"> Ymmärrän ja hyväksyn yllä olevat käyttöehdot
+					</center>
 					<br><br><br>
 					
 					<center>
@@ -169,8 +156,8 @@
 							<input type="hidden" name="no_note" value="1" /> <!--Lisätiedot: 1 = ei, 0 = kyllä-->
 							<input type="hidden" name="return" value="order_success.html">  <!--Sivu, johon asiakas ohjataan onnistuneen ostotapahtuman jälkeen-->
 							<input type="hidden" name="cancel_return" value="order_fail.html">  <!--Sivu, johon asiakas ohjataan hylätyn ostotapahtuman jälkeen-->
-							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							<input style="border: none;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img style="border: none;" alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 							</form>
 						</div>
 					</center>
@@ -181,7 +168,7 @@
 			<!-- Tiedot -->
 			<h3>Tietoa meistä</h3>
 			<p class="tietoa">
-				Olemme avoinna <time>10:00 - 18:00</time> joka arkipäivä.<br>
+				Olemme avoinna 10:00 - 18:00 joka arkipäivä.<br>
 				Mikäli tarvitset apua, voit ottaa yhteyttä kyseiseen sähköpostiin:<br>
 				<font size="6" color="orange">runescapekultaa@gmail.com</font>
 				
@@ -270,6 +257,22 @@
 				margin-bottom: 20px;
 			}
 		</style>
+		
+		<!--If JavaScript is not allowed-->
+		<noscript>
+			<style>
+				body *{
+					display: none;
+				}
+				h1 {
+					display: block;
+					text-align: center;
+				}
+			</style>
+			<h1>
+				JavaScript is not enabled, please check your browser settings.
+			</h1>
+		</noscript>
 		
 	</body>
 	
