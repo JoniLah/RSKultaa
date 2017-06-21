@@ -128,20 +128,13 @@ html.no-js #buttonid {
 	color: orange;
 }
 
-.buttonImage { 
-	position: absolute;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 90px;
-}
-
-.cashstack {
-	position: absolute;
-	padding: 5px 95px;
-	top: -5px; 
-	left: 0px; 
-	width: 40%;
+label.cashstack {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	overflow: hidden;
+	top: -42px;
+	left: 84px;
 	height: 40%;
 	font-family: RSFont;
 	font-size: 70%;
@@ -173,4 +166,13 @@ html.no-js #buttonid {
 	width: 285px;
 	float: left;
 	margin-left: 20px
+}
+
+.imgClass {
+	height: 40%;
+	width: 40%;
+	display: block;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
 }
