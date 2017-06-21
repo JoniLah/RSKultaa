@@ -9,3 +9,9 @@ Also, some of the supposed functions/methods that should've been added to site, 
 This project uses mostly Finnish language, so for those who do not understand Finnish, might find it hard to understand this website.
 
 I have created those "Palaa" and "Tilaa" -buttons with InkScape, other images are downloaded from the internet.
+
+21.06.2017 EDIT:
+
+My friend decided to finally host this page and now is opened at www.rskultaa.fi.
+Added Live Chat functions and fixed the remaining errors that existed.
+However, still needs a slight updating before advertising.
